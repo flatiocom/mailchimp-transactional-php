@@ -46,6 +46,8 @@ class InboundApi
 {
     protected $Configuration;
 
+		public Configuration $config;
+
     public function __construct(Configuration $config = null)
     {
         $this->config = $config ?: new Configuration();
