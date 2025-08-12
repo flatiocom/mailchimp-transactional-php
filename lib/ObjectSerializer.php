@@ -43,8 +43,8 @@ class ObjectSerializer
      * Serialize data
      *
      * @param mixed  $data   the data to serialize
-     * @param string $type   the SwaggerType of the data
-     * @param string $format the format of the Swagger type of the data
+     * @param string|null $type   the SwaggerType of the data
+     * @param string|null $format the format of the Swagger type of the data
      *
      * @return string|object serialized form of $data
      */
@@ -225,7 +225,7 @@ class ObjectSerializer
      *
      * @param mixed    $data          object or primitive to be deserialized
      * @param string   $class         class name is passed as a string
-     * @param string[] $httpHeaders   HTTP headers
+     * @param string[]|null $httpHeaders   HTTP headers
      * @param string   $discriminator discriminator if polymorphism is used
      *
      * @return object|array|null an single or an array of $class instances
